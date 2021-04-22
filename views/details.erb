@@ -18,3 +18,17 @@
     <button type="submit" class="btn btn-primary">Add comment</button>
   </form>
 </p>
+
+<p>
+  <h4>Latest comments:</h4>
+  <br>
+  <% @comments.each do |comment| %>
+  <p>
+    <%= comment['content'] %>
+    <br>
+    Added at <%= comment['created_date'] %>
+    <br>
+  </p>
+  <hr>
+  <% end %>
+</p>
