@@ -8,5 +8,5 @@ get '/' do
 end
 
 get '/new_post' do
-  erb "Hello World"
+  erb :new
 end
